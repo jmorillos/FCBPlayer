@@ -9,12 +9,18 @@
 import Foundation
 
 struct Player {
-    let name: String
-    let largeName: String
-    let placeOfBorn: String
-    let birthDate: String
-    let weight: String
-    let height: String
-    let information: String
-    let informationTechnical: String
+    var name: String
+    var largeName: String
+    var placeOfBorn: String
+    var birthDate: String
+    var weight: String
+    var height: String
+    var information: String
+    var informationTechnical: String
+    var imageProfile: String
 }
+
+
+
+
+
