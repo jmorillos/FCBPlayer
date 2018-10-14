@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="gAi-FQ-Uft" customClass="CategoryCell" customModule="FCBPlayer" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="gAi-FQ-Uft" customClass="CategoryCell" customModule="FCBPlayer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gAi-FQ-Uft" id="fuC-1H-PCh">
@@ -68,11 +68,27 @@
                     <navigationItem key="navigationItem" id="Pzc-xa-DGy"/>
                     <connections>
                         <outlet property="tableView" destination="26U-6k-10c" id="c6u-LY-VPQ"/>
+                        <segue destination="aI3-qo-nwB" kind="show" identifier="toPlayersSelections" id="o30-rf-0Ri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="901.60000000000002" y="-564.46776611694156"/>
+        </scene>
+        <!--Players SelectionVC-->
+        <scene sceneID="oFe-7C-6nq">
+            <objects>
+                <viewController id="aI3-qo-nwB" customClass="PlayersSelectionVC" customModule="FCBPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zI1-3S-L0c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3PI-20-Hld"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyI-kA-NaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Olz-4l-BhM">

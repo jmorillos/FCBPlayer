@@ -16,6 +16,7 @@
 		1CA9E4462172A16600A38CAA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E4452172A16600A38CAA /* Player.swift */; };
 		1CA9E4482172A3F900A38CAA /* DataSetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E4472172A3F900A38CAA /* DataSetPlayer.swift */; };
 		1CA9E44A217353DB00A38CAA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E449217353DB00A38CAA /* CategoryCell.swift */; };
+		1CA9E44C21738D2100A38CAA /* PlayersSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1CA9E4452172A16600A38CAA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1CA9E4472172A3F900A38CAA /* DataSetPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetPlayer.swift; sourceTree = "<group>"; };
 		1CA9E449217353DB00A38CAA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersSelectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1CA9E42D2172928D00A38CAA /* AppDelegate.swift */,
 				1CA9E42F2172928D00A38CAA /* HomeCategoryPlayerVC.swift */,
+				1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA9E44C21738D2100A38CAA /* PlayersSelectionVC.swift in Sources */,
 				1CA9E4462172A16600A38CAA /* Player.swift in Sources */,
 				1CA9E4482172A3F900A38CAA /* DataSetPlayer.swift in Sources */,
 				1CA9E44421729E7500A38CAA /* PlayerCategory.swift in Sources */,

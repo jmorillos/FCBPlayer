@@ -16,13 +16,16 @@ class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDa
     //MARK: - DataSet()
     let data = DataSetPlayer()
     
+    var categoryToPass: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    // MAR: - Protocolos y Delegados
+    // MARK: - Protocolos y Delegados
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.categories.count
     }
@@ -39,6 +42,16 @@ class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDa
         return 200
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        categoryToPass = data.categories[indexPath.row].name
+        performSegue(withIdentifier: "toPlayersSelections", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let playersVC = segue.destination as? PlayersSelectionVC {
+            playersVC.selectedCategory = categoryToPass
+        }
+    }
 
 }
 
