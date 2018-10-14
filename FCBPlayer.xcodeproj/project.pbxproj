@@ -17,6 +17,7 @@
 		1CA9E4482172A3F900A38CAA /* DataSetPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E4472172A3F900A38CAA /* DataSetPlayer.swift */; };
 		1CA9E44A217353DB00A38CAA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E449217353DB00A38CAA /* CategoryCell.swift */; };
 		1CA9E44C21738D2100A38CAA /* PlayersSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */; };
+		1CA9E44E2173957900A38CAA /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44D2173957900A38CAA /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1CA9E4472172A3F900A38CAA /* DataSetPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetPlayer.swift; sourceTree = "<group>"; };
 		1CA9E449217353DB00A38CAA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersSelectionVC.swift; sourceTree = "<group>"; };
+		1CA9E44D2173957900A38CAA /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				1CA9E4312172928D00A38CAA /* Main.storyboard */,
 				1CA9E4362172928E00A38CAA /* LaunchScreen.storyboard */,
 				1CA9E449217353DB00A38CAA /* CategoryCell.swift */,
+				1CA9E44D2173957900A38CAA /* PlayerCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA9E44E2173957900A38CAA /* PlayerCell.swift in Sources */,
 				1CA9E44C21738D2100A38CAA /* PlayersSelectionVC.swift in Sources */,
 				1CA9E4462172A16600A38CAA /* Player.swift in Sources */,
 				1CA9E4482172A3F900A38CAA /* DataSetPlayer.swift in Sources */,

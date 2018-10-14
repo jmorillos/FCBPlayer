@@ -9,6 +9,7 @@
 import UIKit
 
 class PlayersSelectionVC: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var selectedCategory: String!
 
