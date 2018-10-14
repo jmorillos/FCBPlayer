@@ -18,6 +18,7 @@
 		1CA9E44A217353DB00A38CAA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E449217353DB00A38CAA /* CategoryCell.swift */; };
 		1CA9E44C21738D2100A38CAA /* PlayersSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */; };
 		1CA9E44E2173957900A38CAA /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44D2173957900A38CAA /* PlayerCell.swift */; };
+		1CA9E4502173A21600A38CAA /* PlayerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9E44F2173A21600A38CAA /* PlayerDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1CA9E449217353DB00A38CAA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersSelectionVC.swift; sourceTree = "<group>"; };
 		1CA9E44D2173957900A38CAA /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		1CA9E44F2173A21600A38CAA /* PlayerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				1CA9E42D2172928D00A38CAA /* AppDelegate.swift */,
 				1CA9E42F2172928D00A38CAA /* HomeCategoryPlayerVC.swift */,
 				1CA9E44B21738D2100A38CAA /* PlayersSelectionVC.swift */,
+				1CA9E44F2173A21600A38CAA /* PlayerDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				1CA9E44421729E7500A38CAA /* PlayerCategory.swift in Sources */,
 				1CA9E4302172928D00A38CAA /* HomeCategoryPlayerVC.swift in Sources */,
 				1CA9E42E2172928D00A38CAA /* AppDelegate.swift in Sources */,
+				1CA9E4502173A21600A38CAA /* PlayerDetailVC.swift in Sources */,
 				1CA9E44A217353DB00A38CAA /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,9 +13,9 @@ class PlayersSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var collectionView: UICollectionView!
     
     var selectedCategory: String!
-    
     var players: [Player]!
     let data = DataSetPlayer()
+    var playerToPass: Player!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,17 @@ class PlayersSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
         let width = view.bounds.width
         let celldimension = (width / 2) - 15
         return CGSize(width: celldimension, height: celldimension)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        playerToPass = players[indexPath.item]
+        performSegue(withIdentifier: "playerSelection", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? PlayerDetailVC {
+            detailsVC.selectPlayer = playerToPass
+        }
     }
     
 }

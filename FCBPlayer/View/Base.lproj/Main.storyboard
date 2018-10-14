@@ -129,11 +129,62 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="HLs-So-Kqg" id="gPs-Ko-laf"/>
+                        <segue destination="Grd-2i-jq1" kind="show" identifier="playerSelection" id="CnQ-2U-mLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyI-kA-NaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1613.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Player DetailVC-->
+        <scene sceneID="eH9-Lb-umq">
+            <objects>
+                <viewController id="Grd-2i-jq1" customClass="PlayerDetailVC" customModule="FCBPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JN1-qe-yhD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delantero0" translatesAutoresizingMaskIntoConstraints="NO" id="bMp-b1-0xX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="gkY-XG-Qvu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leonel Messi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-eH-R7b">
+                                <rect key="frame" x="123.5" y="339" width="128.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv4-OD-a3z">
+                                <rect key="frame" x="20" y="386" width="335" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sNw-eH-R7b" firstAttribute="centerX" secondItem="JN1-qe-yhD" secondAttribute="centerX" id="5fG-Qv-LOp"/>
+                            <constraint firstItem="bMp-b1-0xX" firstAttribute="leading" secondItem="5OU-TO-YE0" secondAttribute="leading" id="Bkj-7z-HgV"/>
+                            <constraint firstItem="Dv4-OD-a3z" firstAttribute="top" secondItem="sNw-eH-R7b" secondAttribute="bottom" constant="18" id="eO0-c5-zr5"/>
+                            <constraint firstItem="5OU-TO-YE0" firstAttribute="trailing" secondItem="Dv4-OD-a3z" secondAttribute="trailing" constant="20" id="ktR-FN-TpO"/>
+                            <constraint firstItem="sNw-eH-R7b" firstAttribute="top" secondItem="bMp-b1-0xX" secondAttribute="bottom" constant="30" id="qfK-Qn-38w"/>
+                            <constraint firstItem="bMp-b1-0xX" firstAttribute="trailing" secondItem="5OU-TO-YE0" secondAttribute="trailing" id="rJc-nA-E0a"/>
+                            <constraint firstItem="bMp-b1-0xX" firstAttribute="top" secondItem="5OU-TO-YE0" secondAttribute="top" id="zXN-ge-2PV"/>
+                            <constraint firstItem="Dv4-OD-a3z" firstAttribute="leading" secondItem="5OU-TO-YE0" secondAttribute="leading" constant="20" id="ze3-7O-jbx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5OU-TO-YE0"/>
+                    </view>
+                    <connections>
+                        <outlet property="informationPlayer" destination="Dv4-OD-a3z" id="dwm-cW-hbx"/>
+                        <outlet property="playerImage" destination="bMp-b1-0xX" id="XjG-DD-7Ke"/>
+                        <outlet property="playerName" destination="sNw-eH-R7b" id="eM6-vA-a6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMe-AQ-FV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301.5999999999999" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Olz-4l-BhM">
@@ -157,5 +208,6 @@
     <resources>
         <image name="centrocampista0" width="960" height="315"/>
         <image name="defensa0" width="960" height="315"/>
+        <image name="delantero0" width="960" height="315"/>
     </resources>
 </document>
