@@ -18,7 +18,7 @@ class PlayerCell: UICollectionViewCell {
     }
     
     func configureCell(player: Player) {
-        playerImage.image = UIImage(named: player.name)
+        playerImage.image = UIImage(named: player.imageProfile)
     }
     
 }
