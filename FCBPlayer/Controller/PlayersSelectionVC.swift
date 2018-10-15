@@ -11,13 +11,12 @@ class PlayersSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     var players: [Player]!
     let data = DataSetPlayer()
     var playerToPass: Player!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
         players = data.getPlayers(forCategoryName: selectedCategory)
-        print(selectedCategory)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

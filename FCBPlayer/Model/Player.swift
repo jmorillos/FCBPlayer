@@ -14,8 +14,3 @@ struct Player {
     var informationTechnical: String
     var imageProfile: String
 }
-
-
-
-
-

@@ -71,7 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Team FCBarcelona" id="Pzc-xa-DGy">
-                        <barButtonItem key="backBarButtonItem" title=" " id="fql-kn-RcM"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="fql-kn-RcM">
+                            <color key="tintColor" red="0.57589191200000001" green="0.10673265899999999" blue="0.21451479200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="26U-6k-10c" id="c6u-LY-VPQ"/>
@@ -163,7 +165,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv4-OD-a3z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv4-OD-a3z">
                                 <rect key="frame" x="20" y="315" width="335" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <color key="textColor" red="0.20196402072906494" green="0.21993249654769897" blue="0.28311806917190552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

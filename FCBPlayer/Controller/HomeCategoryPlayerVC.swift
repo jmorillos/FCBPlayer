@@ -4,7 +4,7 @@
 import UIKit
 
 class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     // MARK: - Propiedades
     @IBOutlet weak var tableView: UITableView!
     
@@ -12,7 +12,6 @@ class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDa
     let data = DataSetPlayer()
     
     var categoryToPass: String!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         categoryToPass = data.categories[indexPath.row].name
         performSegue(withIdentifier: "toPlayersSelections", sender: self)
@@ -47,6 +46,6 @@ class HomeCategoryPlayerVC: UIViewController, UITableViewDelegate, UITableViewDa
             playersVC.selectedCategory = categoryToPass
         }
     }
-
+    
 }
 

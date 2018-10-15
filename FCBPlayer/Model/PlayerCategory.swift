@@ -12,7 +12,3 @@ struct PlayerCategory {
     let name: String
     let imageName: String
 }
-
-
-
-

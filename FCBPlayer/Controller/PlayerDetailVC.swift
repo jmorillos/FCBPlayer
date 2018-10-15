@@ -12,13 +12,12 @@ class PlayerDetailVC: UIViewController {
     @IBOutlet weak var informationPlayer: UILabel!
     
     var selectPlayer: Player!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         playerImage.image = UIImage(named: selectPlayer.imageProfile)
         playerName.text = selectPlayer.largeName
         informationPlayer.text = selectPlayer.information
     }
-   
-
+    
 }
