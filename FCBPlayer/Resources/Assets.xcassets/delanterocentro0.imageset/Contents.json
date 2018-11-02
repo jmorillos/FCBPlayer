@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "delanterocentro0.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "delanterocentro0.jpg",
       "scale" : "2x"
     },
     {
