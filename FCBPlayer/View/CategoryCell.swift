@@ -7,12 +7,12 @@ class CategoryCell: UITableViewCell {
     
     // MARK: - Propiedades
     @IBOutlet weak var categoryImg: UIImageView!
-    @IBOutlet weak var categoryName: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        categoryImg.layer.cornerRadius = 10
+    @IBOutlet weak var categoryName: UILabel! {
+        didSet {
+             categoryImg.layer.cornerRadius = 10
+        }
     }
+    
     // MARK: Función para personalizar la celda.
     func configureCell(category: PlayerCategory) {
         categoryImg.image = UIImage(named: category.imageName)
